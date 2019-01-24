@@ -5,7 +5,7 @@ billidnum int,
 sourcenm string,
 destnm string,
 duration int,
-mytimestamp string,
+mytimestamp int,
 terminationcode int
 )ROW FORMAT DELIMITED 
   FIELDS TERMINATED BY '|' LOCATION

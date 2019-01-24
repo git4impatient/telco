@@ -9,7 +9,7 @@ for x in range(1,50000):
 	# random distribution of call length
 	#duration=random.randint(0,350) 
 	duration=abs(int(random.gauss(5,3)*60 )) 
-	if (duration%11==5):
+	if (duration%5==3):
 	   duration=abs(int(random.gauss(60,15)*60 ))
 	# one day of calls so from second 1 to 24 hrs
 	timestamp=random.randint(1,86400)
@@ -17,8 +17,9 @@ for x in range(1,50000):
 	  timestamp=28900
 	if (timestamp%11==3):
 	  timestamp=61500
-	terminationcode=random.randint(1,10)
-	if (timestamp%100==7):
+	#terminationcode=random.randint(1,10)
+	terminationcode=abs(int(random.gauss(3,3) ))
+	if (duration> 4000):
 		terminationcode=7
 	#print str(sourcenm)+'|'+str(destnm)+'|'+str( duration)+'|'+str(timestamp)+'|'+str( terminationcode) +'|xxxxxxThis Is Padding To Make The Line Bigger xxxxx'
 	print str(x) +'|'+ str(sourcenm)+'|'+str(destnm)+'|'+str( duration)+'|'+str(timestamp)+'|'+str( terminationcode) 
