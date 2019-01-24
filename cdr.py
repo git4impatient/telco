@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # set up random time for transaction
+# to do:  add local vs longdistance flag, toll free flag
 import random
 for x in range(1,50000):
 	# restrict the source to 5000 numbers
